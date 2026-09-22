@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ch4rlygr</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- GRID BACKGROUND -->
+  <div class="grid-bg"></div>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">ch<em>4</em>rlygr</span>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#stack">stack</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#contact" class="nav-cta">contact_</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <p class="eyebrow">// developer &amp; builder</p>
+      <h1 class="brand-title">
+        <span class="ch">ch</span><span class="four">4</span><span class="rly">rly</span><span class="gr">gr</span>
+      </h1>
+      <p class="hero-sub">
+        Construyo cosas que importan.<br />
+        Ethical Hacking
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">ver proyectos</a>
+        <a href="#contact" class="btn-ghost">hablar →</a>
+      </div>
+    </div>
+
+    <!-- TERMINAL CARD -->
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">ch4rlygr ~ zsh</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="output">ch4rlygr</p>
+        <p><span class="prompt">$</span> cat skills.txt</p>
+        <p class="output">→ fullstack dev</p>
+        <p class="output">→ sistemas &amp; redes</p>
+        <p class="output">→ automatización</p>
+        <p class="output">→ ai / llm tools</p>
+        <p><span class="prompt">$</span> echo $status</p>
+        <p class="output accent">available for work<span class="cursor">█</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack-section" id="stack">
+    <p class="section-label">// 02 — stack</p>
+    <h2>Herramientas<br /><em>de batalla</em></h2>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>TypeScript</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Python</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Node.js</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Linux</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Docker</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Claude API</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Git / CI</p>
+      </div>
+      <div class="stack-item">
+        <span class="stack-icon">⬡</span>
+        <p>Bash</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work-section" id="work">
+    <p class="section-label">// 03 — proyectos</p>
+    <h2>Lo que<br /><em>he construido</em></h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <span class="proj-num">01</span>
+        <h3>Proyecto Alpha</h3>
+        <p>Automatización de flujos con IA y APIs externas. Reduce tiempo operativo en 80%.</p>
+        <div class="proj-tags">
+          <span>Python</span><span>Claude API</span><span>Zapier</span>
+        </div>
+        <a href="#" class="proj-link">ver más →</a>
+      </article>
+      <article class="project-card featured">
+        <span class="proj-num">02</span>
+        <h3>CLI Tool</h3>
+        <p>Herramienta de línea de comandos para gestión de entornos de desarrollo en segundos.</p>
+        <div class="proj-tags">
+          <span>Bash</span><span>Node.js</span><span>Docker</span>
+        </div>
+        <a href="#" class="proj-link">ver más →</a>
+      </article>
+      <article class="project-card">
+        <span class="proj-num">03</span>
+        <h3>Dashboard</h3>
+        <p>Panel de métricas en tiempo real con alertas inteligentes y reportes automáticos.</p>
+        <div class="proj-tags">
+          <span>TypeScript</span><span>React</span><span>WebSockets</span>
+        </div>
+        <a href="#" class="proj-link">ver más →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <p class="section-label">// 04 — contacto</p>
+    <h2>¿Hablamos?</h2>
+    <p class="contact-sub">Disponible para proyectos freelance, colaboraciones y trabajo full-time.</p>
+    <a href="mailto:hola@ch4rlygr.dev" class="btn-primary big">hola@ch4rlygr.dev</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>ch<em>4</em>rlygr © 2026</span>
+    <span class="footer-line">built with intent_</span>
+  </footer>
+
+</body>
+</html>

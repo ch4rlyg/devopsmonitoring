@@ -1,0 +1,23 @@
+{
+  "name": "appsazure",
+  "version": "1.0.0",
+  "description": "Leer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch4rlyg/appsazure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ch4rlyg/appsazure/issues"
+  },
+  "homepage": "https://github.com/ch4rlyg/appsazure#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
