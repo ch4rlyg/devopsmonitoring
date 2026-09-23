@@ -25,9 +25,11 @@ acr_name = "acrjmendozaadeveastus2" // debe ser unico globalmente en Azure
 acr_sku  = "Basic"
 
 // Identidad para GitHub Actions (OIDC)
-github_repo_owner  = "ch4rlyg"
-github_repo_name   = "devopsmonitoring"
-github_repo_branch = "main"
+github_repo_owner    = "ch4rlyg"
+github_repo_name     = "devopsmonitoring"
+github_repo_branch   = "main"
+github_repo_owner_id = "151794520" // gh api repos/ch4rlyg/devopsmonitoring --jq .owner.id
+github_repo_id       = "1380848691" // gh api repos/ch4rlyg/devopsmonitoring --jq .id
 
 // Subscription ID
 subscription_id = "b497fd69-266c-46a9-b55b-8be0cd579667" 

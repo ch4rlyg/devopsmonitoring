@@ -17,7 +17,9 @@ resource "azurerm_federated_identity_credential" "github_actions" {
   parent_id           = azurerm_user_assigned_identity.github_actions.id
   audience            = ["api://AzureADTokenExchange"]
   issuer              = "https://token.actions.githubusercontent.com"
-  subject             = "repo:${var.github_repo_owner}/${var.github_repo_name}:ref:refs/heads/${var.github_repo_branch}"
+  # Formato de subject inmutable (repos creados/renombrados despues del
+  # 15-jul-2026): repo:owner@owner_id/repo@repo_id:ref:refs/heads/branch
+  subject = "repo:${var.github_repo_owner}@${var.github_repo_owner_id}/${var.github_repo_name}@${var.github_repo_id}:ref:refs/heads/${var.github_repo_branch}"
 }
 
 # Permite a la identidad de GitHub Actions hacer push de imagenes al ACR interno.
