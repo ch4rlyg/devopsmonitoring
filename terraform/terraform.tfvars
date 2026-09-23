@@ -21,7 +21,7 @@ webapp_replicas = 2
 webapp_image    = "webapp:latest" // repo:tag dentro del ACR interno
 
 // Azure Container Registry (interno)
-acr_name = "acrjmendozadeveastus2001" // debe ser unico globalmente en Azure
+acr_name = "acrjmendozaadeveastus2" // debe ser unico globalmente en Azure
 acr_sku  = "Basic"
 
 // Identidad para GitHub Actions (OIDC)
@@ -30,4 +30,4 @@ github_repo_name   = "appsazure"
 github_repo_branch = "main"
 
 // Subscription ID
-subscription_id = "2ba4b861-5fb3-4a0f-a613-829ce3d8899c" 
+subscription_id = "b497fd69-266c-46a9-b55b-8be0cd579667" 
