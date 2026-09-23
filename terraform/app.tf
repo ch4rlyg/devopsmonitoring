@@ -7,6 +7,12 @@ resource "kubernetes_namespace" "webapp" {
 }
 
 resource "kubernetes_deployment" "webapp" {
+  # No esperar a que los pods queden Ready: la imagen la sube el workflow de
+  # GitHub Actions por separado (puede no existir aun en el primer apply).
+  # Sin esto, Terraform falla el apply completo -y deja el Service sin crear-
+  # cada vez que la imagen todavia no esta en el ACR.
+  wait_for_rollout = false
+
   metadata {
     name      = "webapp"
     namespace = kubernetes_namespace.webapp.metadata.0.name
