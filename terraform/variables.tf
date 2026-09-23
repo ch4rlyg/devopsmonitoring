@@ -81,16 +81,6 @@ variable "github_repo_branch" {
   default     = "main"
 }
 
-variable "github_repo_owner_id" {
-  description = "ID numerico e inmutable del owner en GitHub (repos creados/renombrados despues del 15-jul-2026 usan el subject claim inmutable 'owner@owner_id/repo@repo_id'). Obtenlo con: gh api repos/<owner>/<repo> --jq .owner.id"
-  type        = string
-}
-
-variable "github_repo_id" {
-  description = "ID numerico e inmutable del repo en GitHub. Obtenlo con: gh api repos/<owner>/<repo> --jq .id"
-  type        = string
-}
-
 variable "namespace_name" {
   description = "Kubernetes namespace where the sample web app resources are created"
   type        = string
