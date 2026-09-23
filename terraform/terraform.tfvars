@@ -26,7 +26,7 @@ acr_sku  = "Basic"
 
 // Identidad para GitHub Actions (OIDC)
 github_repo_owner  = "ch4rlyg"
-github_repo_name   = "appsazure"
+github_repo_name   = "devopsmonitoring"
 github_repo_branch = "main"
 
 // Subscription ID
